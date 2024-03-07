@@ -7,7 +7,6 @@ import Spinner from "../components/Spinner"
 
 const Login = () => {
 
-    console.log('hola mundo')
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
     const [cargando, setCargando] = useState(false);
@@ -27,6 +26,7 @@ const Login = () => {
                 text: "",
                 icon: "error"
             });
+            setCargando(false);
             return;
         }
 
