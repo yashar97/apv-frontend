@@ -31,6 +31,7 @@ const Registro = () => {
                 text: "Todos los campos son obligatorios",
                 icon: "error"
             });
+            setCargando(false);
             return;
         }
 
